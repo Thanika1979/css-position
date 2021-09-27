@@ -1,22 +1,9 @@
 
 .header{
     display: flex;
-}
-.logo, .productly{
-    display: inline-block;
-    margin: 5px;
-    margin-top: 30px;
+    flex-direction: row;
     margin-left: 145px;
-}
-
-.nav {
-    text-align: center;
-    list-style-type: none;
-    height: 28px;
-    margin-left: 46px;
-    margin-right:30px;
-    font-size: 14px;
-    line-height: 28px;
+    margin-top: 10vh;
 }
 .nav li {
     display: inline-block;
@@ -50,22 +37,26 @@
     border-radius: 5px;
     border: #FFFFFF;
 }
-section{
-    display: inline-block;
+section {
+    display:inline-block;
+    flex-direction: row;
+    
 }
+
 .main-title {
     width: 518px;
     min-height: 108px;
     margin-left: 145px;
-    margin-top: 6vh;
+    margin-top: 8vh;
     font-family: Poppins;
     font-style: normal;
     font-weight: bolder;
     font-size: 44px;
     line-height: 54px;
     color: #2F281E;
+    text-align: left;
 }
-.main-content {
+.main-info {
     width: 458px;
     min-height: 95px;
     margin-left: 145px;
@@ -91,32 +82,25 @@ section{
     line-height: 24px;
     color: #FFFFFF;
 }
-.main-images {
-    width: 605px;
-    min-height: 49px;
-    margin-left: 66px;
-    margin-top: 28px;
-    display: flex;
-}
-h1 {
+.logo-title {
+    margin-left: 500px;
     margin-right: 50px;
-    margin-top: 10vh;
-    text-align: center;
-    margin-bottom: 10vh;
+    width: 539px;
+    height: 108px;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
+    text-align: center;
 }
-.logo-images {
-    display: inline-block;
-    width: 240px;
-    height: 178px;
+.fearture {
+    display: flex;
+    flex-flow: row;
+    width: 1095px;
+    height: 204px;
     left: 567px;
-    top: 162px;
-    align-items:flex-end;
-    max-height: 78px;
+    margin-left: 145px;
 }
 h3 {
     font-family: Poppins;
@@ -132,12 +116,13 @@ span {
     font-size: 16px;
     line-height: 26px;
 }
-.btn{
+.btn {
+    text-align: center;
+    margin-left: 550px;
+    margin-top: 40px;
+    padding: 15px;
     width: 175px;
-    left: 46px;
-    right: 46px;
-    top: 74px;
-    bottom: 17px;
+    margin-bottom: 17px;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -146,5 +131,130 @@ span {
     color: #FFFFFF;
     background-color:#FF9900 ;
     border: #FFFFFF;
+    border-radius: 5px;    
+}
+.design{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 1110px;
+    height: 574px;
+    left: 145px;
+    margin-top: 10vh;
+}
+.design-top {
+    display: flex;
+    flex-direction: column;
+    width: 486px;
+    height: 531px;
+    margin-left: 145px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.design-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+
+}
+h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
 }
 
+.design-images {
+    width: 520px;
+    min-height: 574px;
+    margin-left: 735px;
+}
+.manager {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-left: 145px;
+    width: 1121px;
+    height: 521px;    
+}
+.product-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.marketers {
+    display: flex;
+    margin-left: 145px;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 1110px;
+    height: 609px;
+    margin: 10vh;
+    
+}
+.market-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+}
+.market-top {
+    width: 486px;
+    height: 531px;
+    left: 145px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;    
+}
+.container {
+    width: 1109px;
+    height: 308px;
+    margin-left: 145px;
+}
+.row {
+    display: flex;
+    
+}
+.footer-col {
+    max-width: 110px;
+    margin-left: 300px;
+    padding: 15px 15px;
+}
+.end {
+    width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-btn {
+    text-align: center;
+    align-self: flex-start;
+    padding: 15px;
+    width: 175px;
+    margin-bottom: 17px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color:#FF9900 ;
+    border: #FFFFFF;
+    border-radius: 5px;    
+}
+.form {
+    width: 325px;
+    height: 48px;
+    background-color: #BCD0E5;
+    border: #FFFFFF;
+}
